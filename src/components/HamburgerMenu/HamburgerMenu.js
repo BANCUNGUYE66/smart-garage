@@ -10,17 +10,9 @@ const HamburgerMenu = ({ isOpen, toggleMenu }) => {
         <FaTimes className={`close ${isOpen ? '' : 'hide'}`} />
       </IconWrapper>
       <MenuList isOpen={isOpen}>
-        <MenuItem to="/shop">SHOP</MenuItem>
+        <MenuItem to="/home">HOME</MenuItem>
         <Separator />
-        <MenuItem to="/features">FEATURES</MenuItem>
-        <Separator />
-        <MenuItem to="/one-click-apps">ONE-CLICK APPS</MenuItem>
-        <Separator />
-        <MenuItem to="/vehicles">VEHICLES</MenuItem>
-        <Separator />
-        <MenuItem to="/support">SUPPORT</MenuItem>
-        <Separator />
-        <MenuItem to="/blog">BLOG</MenuItem>
+        <MenuItem to="/services">SERVICES/PRODUCT</MenuItem>
         <Separator />
         <AccountItem to="/account">
           <FaUser />

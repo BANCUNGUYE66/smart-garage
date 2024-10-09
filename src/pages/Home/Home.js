@@ -1,32 +1,40 @@
 import React, { useState } from 'react';
 import {
-    HomeContainer,
-    HeroSection,
-    HeroTitle,
-    HeroSubtitle,
-    CTAButton,
-    AppLinksContainer,
-    AppLinkImage,
-    SupportedVehiclesSection,
-    VehiclesTitle,
-    VehiclesGrid,
-    VehicleImage,
-    VehicleName,
-    HowItWorksSection,
-    HowItWorksTitle,
-    StepsContainer,
-    Step,
-    StepNumber,
-    StepDescription,
-    StepArrow,
-    DotsContainer,
-    Dot,
-  } from './Home.styles';
-  
+  HomeContainer,
+  HeroSection,
+  HeroTitle,
+  HeroSubtitle,
+  CTAButton,
+  AppLinksContainer,
+  AppLinkImage,
+  SupportedVehiclesSection,
+  VehiclesTitle,
+  VehiclesGrid,
+  VehicleImage,
+  VehicleName,
+  HowItWorksSection,
+  HowItWorksTitle,
+  StepsContainer,
+  Step,
+  StepNumber,
+  StepDescription,
+  DotsContainer,
+  Dot,
+  EngineFaultsSection,
+  EngineFaultsContent,
+  OBDelevenSection,
+  OBDelevenContent,
+  OBDelevenImage,
+  LearnMoreLink,
+  CommunitySection,
+  CommunityContent,
+  SocialIcons,
+  SocialIcon,
+  EngineFaultsImage,
+} from './Home.styles';
 
 import appStoreIcon from './assets/app-store-badge.png';
 import googlePlayIcon from './assets/google-play-badge.png';
-
 import carBrand1 from './assets/bmw.svg';
 import carBrand2 from './assets/honda.svg';
 import carBrand3 from './assets/hyundai.svg';
@@ -39,10 +47,8 @@ import carBrand9 from './assets/tesla.svg';
 import carBrand10 from './assets/toyota.svg';
 import carBrand11 from './assets/volkswagen.svg';
 import carBrand12 from './assets/all-cars.svg';
-
-import arrowIcon from './assets/arrow-right.svg';
-
-
+import obdelevenDevice from './assets/obdeleven-device.png';
+import engineFaultsImage from './assets/Functions.webp';
 
 const steps = [
     {
@@ -138,6 +144,33 @@ const steps = [
         </VehiclesGrid>
       </SupportedVehiclesSection>
 
+
+
+      <OBDelevenSection>
+        <OBDelevenContent>
+          <OBDelevenImage src={obdelevenDevice} alt="OBDeleven NextGen Device" />
+          <div>
+            <h2>OBDeleven NextGen</h2>
+            <p>OBDeleven NextGen is a pocket-sized Bluetooth device that offers in-depth diagnostics and extensive car customization options. Together with a mobile application, you can quickly scan your vehicle for faults, enable or disable comfort features, monitor live data, and program your car's systems with just a single tap on your smartphone.</p>
+            <LearnMoreLink href="#">Learn more →</LearnMoreLink>
+          </div>
+        </OBDelevenContent>
+      </OBDelevenSection>
+
+
+      <EngineFaultsSection>
+        <EngineFaultsContent>
+          <div>
+            <h2>DIAGNOSE EVERY ENGINE'S FAULTS</h2>
+            <p>Now it's easier than ever to diagnose engine-related problems for every car with a single tap on your smartphone.</p>
+            <CTAButton>More information</CTAButton>
+            <CTAButton>Watch video</CTAButton>
+          </div>
+          <EngineFaultsImage src={engineFaultsImage} alt="Engine Faults Diagnostic" />
+        </EngineFaultsContent>
+      </EngineFaultsSection>
+
+
       <HowItWorksSection>
         <HowItWorksTitle>HOW DOES IT WORK?</HowItWorksTitle>
         <StepsContainer>
@@ -157,6 +190,33 @@ const steps = [
           ))}
         </DotsContainer>
       </HowItWorksSection>
+
+
+      <CommunitySection>
+        <CommunityContent>
+          <h2>JOIN OUR COMMUNITY</h2>
+          <p>Connect with other OBDeleven users – car enthusiasts and professionals. Receive the latest news, share knowledge and feedback, discuss issues, and get advice and assistance.</p>
+          <CTAButton>Visit Forum</CTAButton>
+        </CommunityContent>
+        <SocialIcons>
+          <SocialIcon href="#" target="_blank" rel="noopener noreferrer">
+            <img src="https://obdeleven.com/sylius_media/a6/17/7f3c6e32c958a6102143ab3bf103.svg" alt="Facebook" />
+          </SocialIcon>
+          <SocialIcon href="#" target="_blank" rel="noopener noreferrer">
+            <img src="https://obdeleven.com/sylius_media/00/b4/57bdd4ef87e5324082df6d61ff47.svg" alt="Instagram" />
+          </SocialIcon>
+          <SocialIcon href="#" target="_blank" rel="noopener noreferrer">
+            <img src="https://obdeleven.com/sylius_media/58/aa/623c264983b0b1bdba4cf0245b0a.svg" alt="TikTok" />
+          </SocialIcon>
+          <SocialIcon href="#" target="_blank" rel="noopener noreferrer">
+            <img src="https://obdeleven.com/sylius_media/50/61/8b9291a3f3f89d0827005d67fd22.svg" alt="YouTube" />
+          </SocialIcon>
+          <SocialIcon href="#" target="_blank" rel="noopener noreferrer">
+            <img src="https://obdeleven.com/sylius_media/8c/e1/d69807f192c2fb39bd8c53d157d4.svg" alt="Twitter" />
+          </SocialIcon>
+        </SocialIcons>
+      </CommunitySection>
+
     </HomeContainer>
   );
 };

@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import carImage from './assets/car.jpg';
 
+
 export const HomeContainer = styled.div`
   width: 100%;
   min-height: 100vh;
@@ -21,7 +22,7 @@ export const HeroSection = styled.section`
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 73vh;
   min-height: 300px;
   z-index: 1;
 
@@ -83,12 +84,12 @@ export const AppLinkImage = styled.img`
 `;
 
 export const SupportedVehiclesSection = styled.section`
-  background-color: #252525; /* Background color for the section */
+  background-color: #252525; 
   padding: 4rem 2rem;
 `;
 
 export const VehiclesTitle = styled.h2`
-  color: #fff; /* Title color */
+  color: #fff; 
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2rem;
@@ -96,38 +97,38 @@ export const VehiclesTitle = styled.h2`
 
 export const VehiclesGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust as needed */
-  gap: 1.5rem; /* Gap between grid items */
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
+  gap: 1.5rem; 
   justify-items: center;
-  justify-content: center; /* Center grid items when fewer than full row */
+  justify-content: center; 
 
   @media (max-width: 768px) {
-    grid-template-columns: repeat(3, 1fr); /* 3 items per row on smaller screens */
-    gap: 1rem; /* Reduced gap for smaller screens */
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1rem;
   }
 
   @media (max-width: 480px) {
-    grid-template-columns: repeat(2, 1fr); /* 2 items per row on extra small screens */
-    gap: 0.75rem; /* Further reduced gap */
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 0.75rem;
   }
 `;
 
 export const VehicleImage = styled.img`
-  background-color: #373737; /* Background for individual vehicle images */
+  background-color: #373737;
   padding: 6px;
   border-radius: 8px;
   width: 150px;
   height: 150px;
-  object-fit: contain; /* Ensure the images fit within the box */
+  object-fit: contain; 
 
   @media (max-width: 768px) {
     width: 100px;
-    height: 100px; /* Reduce image size on smaller screens */
+    height: 100px; 
   }
 
   @media (max-width: 480px) {
     width: 80px;
-    height: 80px; /* Further reduce image size on extra small screens */
+    height: 80px; 
   }
 `;
 
@@ -137,7 +138,7 @@ export const VehicleName = styled.p`
 `;
 
 export const HowItWorksSection = styled.section`
-  background-color: #F7F7F7;
+  background-color: white;
   padding: 4rem 2rem;
   text-align: center;
 `;
@@ -219,5 +220,134 @@ export const Dot = styled.div`
 
   &:hover {
     transform: scale(1.2);
+  }
+`;
+
+
+export const EngineFaultsSection = styled.section`
+  background-color: #252525;
+  padding: 4rem 2rem;
+  color: black;
+  background-color: white;
+  position: relative;
+`;
+
+export const EngineFaultsContent = styled.div`
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  > div {
+    max-width: 50%;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  ${CTAButton} {
+    margin-right: 1rem;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+
+    > div {
+      max-width: 100%;
+      margin-bottom: 2rem;
+    }
+  }
+`;
+
+export const EngineFaultsImage = styled.img`
+  max-width: 45%;
+  height: auto;
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+  }
+`;
+export const OBDelevenSection = styled.section`
+  background-color: white;
+  padding: 4rem 2rem;
+  color: black;
+`;
+
+export const OBDelevenContent = styled.div`
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+`;
+
+export const OBDelevenImage = styled.img`
+  width: 40%;
+  margin-right: 2rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+`;
+
+export const LearnMoreLink = styled.a`
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 1rem;
+`;
+
+
+export const CommunitySection = styled.section`
+  background-color: #0066cc;
+  color: white;
+  padding: 4rem 2rem;
+`;
+
+export const CommunityContent = styled.div`
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+`;
+
+export const SocialIcons = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+`;
+
+export const SocialIcon = styled.a`
+  margin: 0 0.5rem;
+  
+  img {
+    width: 30px;
+    height: 30px;
   }
 `;

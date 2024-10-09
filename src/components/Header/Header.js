@@ -23,11 +23,8 @@ const Header = () => {
         </Link>
       </Logo>
       <Nav>
-        <NavItem to="/shop">SHOP</NavItem>
-        <NavItem to="/features">FEATURES</NavItem>
-        <NavItem to="/vehicles">VEHICLES</NavItem>
-        <NavItem to="/support">SUPPORT</NavItem>
-        <NavItem to="/blog">BLOG</NavItem>
+        <NavItem to="/home">HOME</NavItem>
+        <NavItem to="/services">SERVICES/PRODUCT</NavItem>
       </Nav>
       <RightSection>
         <HamburgerMenu isOpen={isMenuOpen} toggleMenu={toggleMenu} />
