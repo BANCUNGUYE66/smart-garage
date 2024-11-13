@@ -1,7 +1,6 @@
-// src/pages/Shop/Shop.js
-
 import React from 'react';
 import { ShopContainer, ContactSection, DeviceSection, DeviceInfo, ContactInfo } from './Shop.styles';
+import cartImage from '../Home/assets/cart.png';
 
 const Shop = () => {
   return (
@@ -19,6 +18,7 @@ const Shop = () => {
         <h2>Available Device</h2>
         <DeviceInfo>
           <h3>Smart Garage Diagnostic Tool</h3>
+          <img src={cartImage} alt="NextGen OBDeleven device" />
           <p>Our diagnostic tool allows you to quickly identify engine faults in real time. Compact, user-friendly, and equipped with cutting-edge AI.</p>
           <p><strong>Price:</strong> $299</p>
         </DeviceInfo>

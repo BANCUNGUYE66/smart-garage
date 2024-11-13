@@ -1,5 +1,3 @@
-// src/pages/Shop/Shop.styles.js
-
 import styled from 'styled-components';
 
 export const ShopContainer = styled.div`
@@ -58,6 +56,11 @@ export const DeviceInfo = styled.div`
     font-size: 1.3em;
     color: #007bff;
     margin-bottom: 10px;
+  }
+
+  img {
+    max-width: 200px;
+    margin-top: 20px;
   }
 
   p {
